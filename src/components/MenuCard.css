@@ -1,0 +1,108 @@
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .menu-card-image img {
+  transform: scale(1.05);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #D2691E;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-card-content {
+  padding: 1.5rem;
+}
+
+.menu-card-title {
+  margin: 0 0 0.5rem 0;
+  color: #2C1810;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.menu-card-description {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.menu-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-card-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #D2691E;
+}
+
+.add-to-cart-btn {
+  background: linear-gradient(135deg, #8B4513, #D2691E);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(135deg, #A0522D, #8B4513);
+  transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .menu-card-content {
+    padding: 1rem;
+  }
+
+  .menu-card-title {
+    font-size: 1.1rem;
+  }
+
+  .menu-card-price {
+    font-size: 1.3rem;
+  }
+
+  .add-to-cart-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
